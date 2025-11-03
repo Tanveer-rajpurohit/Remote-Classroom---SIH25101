@@ -5,9 +5,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import "./SplitCardScroll.css"; 
-import { TrendingUp, Aperture, Wand2 } from 'lucide-react';
-
-
+import { Signal, Users, Wand2 } from 'lucide-react';
 
 export default function SplitCardScroll() {
   const componentRef = useRef<HTMLDivElement>(null);
@@ -216,7 +214,7 @@ export default function SplitCardScroll() {
         <section className="split-sticky">
           <div className="split-sticky-header">
             <h1 className="text-5xl font-medium leading-none">
-              Three pillars with one purpose
+              Our Three Pillars for Accessible Education
             </h1>
           </div>
 
@@ -231,14 +229,14 @@ export default function SplitCardScroll() {
               </div>
               <div className="split-card-back bg-gray-200 dark:bg-gray-200 text-black">
                 <div className="split-card-back-content">
-                  <TrendingUp className="card-back-icon" size={32} />
+                  <Signal className="card-back-icon" size={32} />
                   <div className="card-back-title">
-                    Going
+                    Built for
                     <br />
-                    Zero to One
+                    Low-Bandwidth
                   </div>
                   <p className="card-back-text">
-                    If you're navigating a new business unit, or a new venture entirely, or breaking into a new market
+                    Our audio-first platform is optimized for unstable networks, ensuring clear, stable lectures on any entry-level smartphone.
                   </p>
                 </div>
               </div>
@@ -254,14 +252,14 @@ export default function SplitCardScroll() {
               </div>
               <div className="split-card-back bg-[#d93a30] dark:bg-[#d93a30] text-white">
                 <div className="split-card-back-content">
-                  <Aperture className="card-back-icon" size={32} />
+                  <Users className="card-back-icon" size={32} />
                   <div className="card-back-title">
-                    Scaling from
+                    Interactive
                     <br />
-                    One to N
+                    & Engaging
                   </div>
                   <p className="card-back-text">
-                    If {`you've`} achieved Product/Service Market Fit, and are looking to scale your business to new heights
+                    Keep students engaged with real-time tools like live chat, polls, quizzes, and a digital whiteboard, all designed to function at low speeds.
                   </p>
                 </div>
               </div>
@@ -279,12 +277,12 @@ export default function SplitCardScroll() {
                 <div className="split-card-back-content">
                   <Wand2 className="card-back-icon" size={32} />
                   <div className="card-back-title">
-                    Need Quick
+                    Offline-First
                     <br />
-                    Solutions
+                    & AI-Powered
                   </div>
                   <p className="card-back-text">
-                    If you know exactly what you want and need a team that can step in and quickly help you with it
+                    Never miss a class. Download compressed recordings for offline viewing, and get AI-generated smart notes and translations for any lecture.
                   </p>
                 </div>
               </div>
@@ -295,4 +293,3 @@ export default function SplitCardScroll() {
     </>
   );
 }
-
